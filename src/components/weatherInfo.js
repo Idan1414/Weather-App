@@ -10,7 +10,7 @@ function WeatherInfo(props) {
 
   return (
     <div className='container square border border-2 text-center mt-4'>
-      <h2 className='display-4'>Weather of {Myinfo.name}</h2>
+      <h2 className='display-4'>Weather in {Myinfo.name}</h2>
       {Myinfo.weather && Myinfo.weather[0] && (//in order to await.
         <img
           src={`http://openweathermap.org/img/w/${Myinfo.weather[0].icon}.png`}
